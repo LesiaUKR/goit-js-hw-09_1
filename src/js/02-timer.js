@@ -20,14 +20,14 @@ const options = {
   onClose(selectedDates) {
     endDate = selectedDates[0];
     console.log(selectedDates[0]);
-      if (endDate <= new Date()) {
-        console.log(Notiflix.Notify.failure('Please choose a date in the future'));
-      } else {
-        startBtn.disabled = false;
-        console.log(selectedDates[0]);
-      }
-        },
-  }
+    if (endDate <= new Date()) {
+      console.log(Notiflix.Notify.failure('Please choose a date in the future'));
+    } else {
+      startBtn.disabled = false;
+      console.log(selectedDates[0]);
+    }
+  },
+};
 
 flatpickr(input, options);
 
