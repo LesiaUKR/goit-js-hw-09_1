@@ -22,9 +22,9 @@ const options = {
     console.log(selectedDates[0]);
       if (endDate <= new Date()) {
         console.log(Notiflix.Notify.failure('Please choose a date in the future'));
-        startBtn.disabled = true;
-      } else {
         startBtn.disabled = false;
+      } else {
+        startBtn.disabled = true;
         console.log(selectedDates[0]);
       }
         },
