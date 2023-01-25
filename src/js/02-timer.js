@@ -31,3 +31,4 @@ const options = {
 
 flatpickr(input, options);
 
+  btnStart.addEventListener('click', onStart);
